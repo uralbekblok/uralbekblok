@@ -1,9 +1,7 @@
 html, body { height: 100%; }
 
 body {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   
 }
 
 .loading {
@@ -14,6 +12,10 @@ body {
     height: 80px;
     -webkit-animation: spin 3s linear infinite; /* Safari */
     animation: spin 2s linear infinite;
+    
+    display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 @-webkit-keyframes spin {
