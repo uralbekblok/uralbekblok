@@ -6,10 +6,6 @@ body {
    justify-content: center;
 }
 
-// Here is where the magic happens
-
-$offset: 187;
-$duration: 1.4s;
 
 .spinner {
   animation: rotator $duration linear infinite;
