@@ -30,3 +30,42 @@ $sidebar-footer-height: 230px;
   }
 }
 
+.sidebar {
+  color: $text-color;
+  overflow-x: hidden !important;
+  position: relative;
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten($bg-color, 15);
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: $bg-color;
+  }
+  
+  .image-wrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &.has-bg-image .image-wrapper {
+    display: block;
+  }
+  
+  
