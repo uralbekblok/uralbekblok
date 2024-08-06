@@ -134,3 +134,28 @@ $sidebar-footer-height: 230px;
     transform: rotate(-5deg);
   }
 }
+
+.layout {
+  .sidebar {
+    .menu {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-header {
+        font-weight: 600;
+        padding: 10px 25px;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        transition: opacity 0.3s;
+        opacity: 0.5;
+      }
+      .menu-item {
+        a {
+          display: flex;
+          align-items: center;
+          height: 50px;
+          padding: 0 20px;
+          color: $text-color;
+          
