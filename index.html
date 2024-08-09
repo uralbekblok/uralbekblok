@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar Layout</title>
+    <title>Responsive Stackable Sidebar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+    </header>
     <div class="container">
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <h2>Menu</h2>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,6 +25,12 @@
             <p>This is the main content area. Here you can place your articles, images, and other content.</p>
         </main>
     </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
 
