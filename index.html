@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <h2>Sidebar</h2>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -17,12 +17,81 @@
         </ul>
     </div>
     <div class="content">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         <h1>Main Content</h1>
         <p>This is where your main content goes.</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
 <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hide the sidebar */
+    background-color: #333;
+    color: white;
+    transition: 0.3s; /* Smooth transition */
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 0;
+    padding: 20px;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.content.active {
+    margin-left: 250px;
+}
 </style>
+
+scope=""
