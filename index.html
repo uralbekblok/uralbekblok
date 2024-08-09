@@ -110,3 +110,18 @@ body {
     }
 }
 </style>
+
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const content = document.querySelector('.content');
+    
+    if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-250px'; // Hide sidebar
+        content.style.marginLeft = '0'; // Adjust content margin
+    } else {
+        sidebar.style.left = '0px'; // Show sidebar
+        content.style.marginLeft = '250px'; // Adjust content margin
+    }
+}
+</script>
