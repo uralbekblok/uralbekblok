@@ -35,5 +35,68 @@
 </html>
 
 <style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Basic styling for the sidebar and main content */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    flex: 0 0 25%; /* Sidebar takes 25% of the container width */
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ccc;
+}
+
+main {
+    flex: 0 0 70%; /* Main content takes 70% of the container width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
 </style>
