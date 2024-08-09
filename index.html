@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar Example</title>
+    <title>Responsive Collapsible Sidebar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
         <h2>Sidebar</h2>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -17,7 +18,7 @@
         </ul>
     </div>
     <div class="content">
-        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
         <h1>Main Content</h1>
         <p>This is where your main content goes.</p>
     </div>
@@ -36,12 +37,13 @@ body {
     width: 250px;
     position: fixed;
     top: 0;
-    left: -250px; /* Initially hide the sidebar */
+    left: -250px; /* Initially hidden */
     background-color: #333;
     color: white;
-    transition: 0.3s; /* Smooth transition */
+    transition: 0.3s; /* Smooth slide transition */
     padding-top: 20px;
     overflow-y: auto;
+    z-index: 1000; /* Ensure sidebar is above other content */
 }
 
 .sidebar h2 {
@@ -70,15 +72,9 @@ body {
     background-color: #575757;
 }
 
-.content {
-    margin-left: 0;
-    padding: 20px;
-}
-
-.toggle-btn {
+.close-btn, .open-btn {
     position: fixed;
     top: 10px;
-    left: 10px;
     font-size: 24px;
     cursor: pointer;
     background: #333;
@@ -86,11 +82,32 @@ body {
     border: none;
     padding: 10px;
     border-radius: 4px;
-    z-index: 1000;
+    z-index: 1001;
+}
+
+.open-btn {
+    left: 10px;
+}
+
+.close-btn {
+    right: 10px;
+    left: auto;
+}
+
+.content {
+    transition: margin-left 0.3s;
+    padding: 20px;
+    margin-left: 0;
 }
 
 .content.active {
-    margin-left: 250px;
+    margin-left: 250px; /* Adjust content margin when sidebar is open */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust width for smaller screens */
+    }
 }
 </style>
 
@@ -100,11 +117,11 @@ function toggleSidebar() {
     const content = document.querySelector('.content');
     
     if (sidebar.style.left === '0px') {
-        sidebar.style.left = '-250px';
-        content.style.marginLeft = '0';
+        sidebar.style.left = '-250px'; // Hide sidebar
+        content.style.marginLeft = '0'; // Adjust content margin
     } else {
-        sidebar.style.left = '0px';
-        content.style.marginLeft = '250px';
+        sidebar.style.left = '0px'; // Show sidebar
+        content.style.marginLeft = '250px'; // Adjust content margin
     }
 }
 </script>
