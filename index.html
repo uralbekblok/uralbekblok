@@ -35,10 +35,26 @@
 </html>
 
 <style>
-    /* Basic reset */
+/* Basic reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.toggle-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 
 .container {
@@ -52,6 +68,12 @@ body {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: 100vh; /* Full height */
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+.sidebar.active {
+    transform: translateX(-250px); /* Hide sidebar */
 }
 
 .sidebar h2 {
@@ -81,5 +103,28 @@ body {
 .content {
     flex: 1;
     padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .content {
+        margin-top: 60px; /* Space for header */
+    }
 }
 </style>
