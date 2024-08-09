@@ -1,102 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Sidebar</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Sidebar</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Website Header</h1>
-        </header>
-        <aside class="sidebar">
-            <h2>Sidebar Menu</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </aside>
-        <main>
-            <section>
-                <h2>Main Content Section</h2>
-                <p>This is the main content area of the website.</p>
-            </section>
-        </main>
-        <footer>
-            <p>Footer content here</p>
-        </footer>
-    </div>
+
+<div class="sidebar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <h1>Main Content Area</h1>
+    <p>This is the main content area. Replace this with your content.</p>
+</div>
+
 </body>
 </html>
 
-<style>
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic styling for the sidebar and main content */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header, footer {
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.sidebar {
-    flex: 0 0 25%; /* Sidebar takes 25% of the container width */
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-
-.sidebar h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 5px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-    background-color: #ccc;
-}
-
-main {
-    flex: 0 0 70%; /* Main content takes 70% of the container width */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-}
-</style>
+sty
