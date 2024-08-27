@@ -31,3 +31,17 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
     color: #fff;
     font-size: 24px;
 }
+
+.hyder{background:#282A45;border-radius:0 0 100px 0}
+.hr{border:0.1px solid #fff;margin:5px;margin-left:0;width:60%}
+.w3-pale-red {
+    border: 1px solid #0095b6;
+    border-radius: 100px 0 100px 0;
+}
+.center {
+    margin: 20px;
+    margin-bottom: 2px;
+}
+
+.right{margin-right:100px;width:100px;float:right!important}
+@media screen and (max-width:700px){.display{display:none}}
