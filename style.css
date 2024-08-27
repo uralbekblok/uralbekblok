@@ -40,6 +40,11 @@ body{
     color: #fff;
     padding-top: 8px;
 }
+#right {
+    float: right!important;
+    mar
+}
+
 
 .right{margin-right:100px;width:70px;float:right!important}
 @media screen and (max-width:700px){.display{display:none}}
