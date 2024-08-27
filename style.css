@@ -43,9 +43,7 @@ body{
 #right {
     float: right!important;
     margin-right: 100px;
-    width: 7;
+    width: 7px;
 }
 
-
-.right{margin-right:100px;width:70px;float:right!important}
 @media screen and (max-width:700px){.display{display:none}}
