@@ -41,5 +41,5 @@ body{
     padding-top: 8px;
 }
 
-.right{margin-right:100px;width:100px;float:right!important}
+.right{margin-right:100px;width:70px;float:right!important}
 @media screen and (max-width:700px){.display{display:none}}
