@@ -40,7 +40,7 @@ body{
     color: #fff;
     padding-top: 8px;
 }
-#cosmonaut {
+.cosmonaut {
     float: right!important;
     margin-right: 100px;
     width: 100px;
