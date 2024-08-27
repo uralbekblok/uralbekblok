@@ -45,5 +45,4 @@ body{
     margin-right: 100px;
     width: 7px;
 }
-
 @media screen and (max-width:700px){.display{display:none}}
