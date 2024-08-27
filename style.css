@@ -27,6 +27,7 @@ body{
     text-shadow:0.5px 0.7px #000;}
 #index {
     background:#282A45;
+    border-right: 1px solid #0095B6;
     border-radius:0 0 80px 0;
     padding: 16px;
     padding-bottom: 8px;
