@@ -35,14 +35,7 @@ body{
     margin:5px;margin-left:0;
     width:60%;
 }
-.w3-pale-red {
-    border: 1px solid #0095b6;
-    border-radius: 100px 0 100px 0;
-}
-.center {
-    margin: 20px;
-    margin-bottom: 2px;
-}
+
 
 .right{margin-right:100px;width:100px;float:right!important}
 @media screen and (max-width:700px){.display{display:none}}
