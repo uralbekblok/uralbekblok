@@ -30,9 +30,11 @@ body{
     border-radius:0 0 100px 0;
     padding: 16px;
 }
-
-
-.hr{border:0.1px solid #fff;margin:5px;margin-left:0;width:60%}
+#hr {
+    border:0.1px solid #fff;
+    margin:5px;margin-left:0;
+    width:60%;
+}
 .w3-pale-red {
     border: 1px solid #0095b6;
     border-radius: 100px 0 100px 0;
