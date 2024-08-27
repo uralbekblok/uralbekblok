@@ -42,7 +42,8 @@ body{
 }
 #right {
     float: right!important;
-    mar
+    margin-right: 100px;
+    width: 7;
 }
 
 
