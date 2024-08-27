@@ -23,6 +23,6 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
     color:#0095B6;
     text-shadow:0.5px 0.7px #000;}
 #index {
-    border-radius: 100px;
+    border-radius: 0,0,100px,0;
     background: #0095B6;
 }
