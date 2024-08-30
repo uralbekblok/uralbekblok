@@ -54,10 +54,8 @@ a:hover {
     border: 2px solid #0095B6;
 }
 .Os {
-    z-index: 1;
     font-family: "Oswald";
-    font-size: 12px;
-    bottom: 0;
+    font-size: 18px;
 }
 .cosmonaut {
     float: right!important;
