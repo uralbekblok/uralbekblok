@@ -29,6 +29,9 @@ a:hover {
     padding:3px;
     color:#0095B6;
     text-shadow:0.5px 0.7px #000;}
+#bio {
+    background: #A3E3ED;
+}
 #index {
     background:#282A45;
     border-right: 5px solid #0095B6;
