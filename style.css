@@ -60,6 +60,7 @@ a:hover {
 .Os {
     font-family: "Oswald";
     font-size: 12px;
+    padding-right: 8px;
 }
 .cosmonaut {
     float: right!important;
