@@ -55,7 +55,7 @@ a:hover {
 }
 .Os {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     font-family: "Oswald";
     font-size: 12px;
     bottom: 0;
