@@ -6,6 +6,7 @@ body{
 }
 a:hover {
     background: none;
+    cursor: none;
 }
 #top {
     position: fixed;
