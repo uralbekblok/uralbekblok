@@ -45,7 +45,8 @@ body{
     font-size: 12px;
 }
 .Logotip {
-    border-radius: 50px;
+    border-radius: 50%;
+    width: 50px;
 }
 .cosmonaut {
     float: right!important;
