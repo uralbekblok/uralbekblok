@@ -21,7 +21,7 @@
 <year>2003</year>
 <price>49.99</price>
 </book>
-<book category="x" cover="paperback">
+<book category="x">
 <title lang="en">Learning XML</title>
 <author>Erik T. Ray</author>
 <year>2003</year>
