@@ -34,8 +34,8 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
     color:#0095B6;
     text-shadow:0.5px 0.7px #000;
 }
-@media.logotip screen and (max-width:700px) {
-    .logotip {
+@media screen and (max-width:700px) {
+    [] {
         font-size: 20px;
         padding: 2px;
         color: red;
