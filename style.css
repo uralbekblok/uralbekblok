@@ -29,8 +29,8 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 #logotip {
     font-family:"Oswald";
     float:left!important;
-    font-size:26px;
-    padding:3px;
+    font-size:22px;
+    padding:2px;
     color:#0095B6;
     text-shadow:0.5px 0.7px #000;
 }
