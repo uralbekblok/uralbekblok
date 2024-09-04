@@ -20,3 +20,17 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
     background: #fff;
     box-shadow:0 4px 4px 0 rgba(0,0,0,0.12),0 4px 4px 0 rgba(0,0,0,0.20)
 }
+#header {
+    padding-left: 18px;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+#logotip {
+    font-family:"Oswald";
+    float:left!important;
+    font-size:26px;
+    padding:3px;
+    color:#0095B6;
+    text-shadow:0.5px 0.7px #000;
+}
